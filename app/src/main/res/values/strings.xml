@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Movemate</string>
+
+    <string name="btn_back_to_home">Back to home</string>
 </resources>

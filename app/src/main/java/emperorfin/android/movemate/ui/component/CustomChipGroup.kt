@@ -24,8 +24,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
 import emperorfin.android.movemate.R
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
@@ -34,8 +32,8 @@ import emperorfin.android.movemate.ui.theme.MovemateTheme
 @Composable
 fun CustomChipGroup(
     chipLabels: List<String>,
-    @DimenRes height: Dp = dimensionResource(id = R.dimen.custom_chip_group_height_43),
-    @DimenRes spaceWidth: Dp = dimensionResource(id = R.dimen.custom_chip_group_spacer_width_8)
+    @DimenRes height: Int = R.dimen.custom_chip_group_height_43,
+    @DimenRes spaceWidth: Int = R.dimen.custom_chip_group_spacer_width_8
 ) {
     var selectedChip by remember { mutableStateOf("") }
 
@@ -46,7 +44,7 @@ fun CustomChipGroup(
     ) {
         chipLabels.forEach { label ->
             FilterChip(
-                modifier = Modifier.height(height = height),
+                modifier = Modifier.height(height = dimensionResource(id = height)),
                 onClick = { selectedChip = label },
                 label = { Text(label) },
                 selected = selectedChip == label,
@@ -66,7 +64,7 @@ fun CustomChipGroup(
                 } else null
             )
 
-            Spacer(modifier = Modifier.width(width = spaceWidth))
+            Spacer(modifier = Modifier.width(width = dimensionResource(id = spaceWidth)))
         }
     }
 }

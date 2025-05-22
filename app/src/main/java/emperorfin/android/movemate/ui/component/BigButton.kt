@@ -78,7 +78,7 @@ fun BigButton(
 
 @Preview
 @Composable
-fun BigButtonPreview() {
+private fun BigButtonPreview() {
     MovemateTheme {
         BigButton(
             textRes = R.string.btn_back_to_home,

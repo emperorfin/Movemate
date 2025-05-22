@@ -5,4 +5,11 @@
     <dimen name="big_button_border_stroke_width_1">1dp</dimen>
     <dimen name="big_button_text_padding_start_10">10dp</dimen>
     <dimen name="big_button_text_font_size_18">18dp</dimen>
+
+    <dimen name="custom_chip_group_height_43">43dp</dimen>
+    <dimen name="custom_chip_group_flow_row_padding_all_8">8dp</dimen>
+    <dimen name="custom_chip_group_flow_row_horizontal_arrangement_2">2dp</dimen>
+    <dimen name="custom_chip_group_flow_row_vertical_arrangement_8">8dp</dimen>
+    <dimen name="custom_chip_group_filter_chip_border_stroke_width_2">2dp</dimen>
+    <dimen name="custom_chip_group_spacer_width_8">8dp</dimen>
 </resources>

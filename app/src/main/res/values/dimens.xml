@@ -12,4 +12,8 @@
     <dimen name="custom_chip_group_flow_row_vertical_arrangement_8">8dp</dimen>
     <dimen name="custom_chip_group_filter_chip_border_stroke_width_2">2dp</dimen>
     <dimen name="custom_chip_group_spacer_width_8">8dp</dimen>
+
+    <dimen name="rounded_outlined_text_field_with_icons_leading_icon_size_16">16dp</dimen>
+    <dimen name="rounded_outlined_text_field_with_icons_trailing_icon_size_40">40dp</dimen>
+    <dimen name="rounded_outlined_text_field_with_icons_rounded_corner_shape_size_25">25dp</dimen>
 </resources>

@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import emperorfin.android.movemate.ui.component.CustomChipGroup
+import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,11 +30,13 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.padding(innerPadding)
                         )
 
-                        Row {
-                            CustomChipGroup(
-                                chipLabels = listOf("Documents", "Glass", "Liquid", "Foods", "Electronic", "Product", "Others")
-                            )
-                        }
+                        RoundedOutlinedTextFieldWithIcons(
+                            labelRes = R.string.txt_enter_the_receipt_number,
+                            value = "",
+                            onValueChanged = { },
+                            leadingIconRes = R.drawable.ic_search,
+                            trailingIconRes = R.drawable.ic_scan,
+                        )
                     }
                 }
             }

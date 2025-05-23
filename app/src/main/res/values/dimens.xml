@@ -16,4 +16,16 @@
     <dimen name="rounded_outlined_text_field_with_icons_leading_icon_size_16">16dp</dimen>
     <dimen name="rounded_outlined_text_field_with_icons_trailing_icon_size_40">40dp</dimen>
     <dimen name="rounded_outlined_text_field_with_icons_rounded_corner_shape_size_25">25dp</dimen>
+
+    <dimen name="text_field_with_icon_padding_horizontal_8">8dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_row_padding_start_27">27dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_row_padding_end_12">12dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_generic_width_31">31dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_generic_height_30">30dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_separator_height_44">44dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_separator_width_4">4dp</dimen>
+    <dimen name="text_field_with_icon_leading_icon_spacer_width_10">10dp</dimen>
+    <dimen name="text_field_with_icon_text_font_size_25p1">25.1dp</dimen>
+    <dimen name="text_field_with_icon_shape_size_10">10dp</dimen>
+    <dimen name="text_field_with_icon_height_75">75dp</dimen>
 </resources>

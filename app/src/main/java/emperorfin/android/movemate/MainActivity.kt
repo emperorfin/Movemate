@@ -14,10 +14,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import emperorfin.android.movemate.ui.component.DropdownWithIcon
+import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
+import emperorfin.android.movemate.ui.theme.GreenFf3dbc89
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
 class MainActivity : ComponentActivity() {
@@ -47,6 +51,20 @@ class MainActivity : ComponentActivity() {
                             icon = R.drawable.ic_box,
                             menuItems = listOf("Box", "Box2", "Box3"),
                             onItemClick = {}
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        ShipmentsListItem(
+                            trailingImageRes = R.drawable.img_box_119_by_91,
+                            title = stringResource(id = R.string.txt_arriving_today),
+                            status = R.string.txt_in_progress,
+                            trackingNumber = "#NEJ20089934122231",
+                            location = "Atlanta",
+                            amount = "1400",
+                            date = "Sep 20,2023",
+                            statusIconRes = R.drawable.ic_sync,
+                            statusIconTint = GreenFf3dbc89
                         )
                     }
                 }

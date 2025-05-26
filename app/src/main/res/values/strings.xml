@@ -4,4 +4,7 @@
     <string name="btn_back_to_home">Back to home</string>
 
     <string name="txt_enter_the_receipt_number">Enter the receipt number...</string>
+    <string name="txt_in_progress">in-progress</string>
+    <string name="txt_arriving_today">Arriving today!</string>
+    <string name="txt_your_delivery_from_your_location_is_arriving_today">Your delivery, %s from %s, is arriving today!</string>
 </resources>

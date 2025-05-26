@@ -28,4 +28,27 @@
     <dimen name="text_field_with_icon_text_font_size_25p1">25.1dp</dimen>
     <dimen name="text_field_with_icon_shape_size_10">10dp</dimen>
     <dimen name="text_field_with_icon_height_75">75dp</dimen>
+
+    <dimen name="shipments_list_item_box_rounded_corner_shape_size_15">15dp</dimen>
+    <dimen name="shipments_list_item_box_height_256">256dp</dimen>
+    <dimen name="shipments_list_item_box_row_padding_16">16dp</dimen>
+    <dimen name="shipments_list_item_box_row_column_box_rounded_corner_shape_size_20">20dp</dimen>
+    <dimen name="shipments_list_item_status_box_width_179">179dp</dimen>
+    <dimen name="shipments_list_item_status_box_height_42">42dp</dimen>
+    <dimen name="shipments_list_item_status_box_row_padding_horizontal_8">8dp</dimen>
+    <dimen name="shipments_list_item_status_icon_width_23">23dp</dimen>
+    <dimen name="shipments_list_item_status_icon_height_18">18dp</dimen>
+    <dimen name="shipments_list_item_status_text_font_size_20p3">20.3dp</dimen>
+    <dimen name="shipments_list_item_spacer_height_11">11dp</dimen>
+    <dimen name="shipments_list_item_spacer_height_3">3dp</dimen>
+    <dimen name="shipments_list_item_spacer_height_20">20dp</dimen>
+    <dimen name="shipments_list_item_spacer_width_7">7dp</dimen>
+    <dimen name="shipments_list_item_spacer_width_8">8dp</dimen>
+    <dimen name="shipments_list_item_title_font_size_25p3">25.3dp</dimen>
+    <dimen name="shipments_list_item_description_font_size_18p9">18.9dp</dimen>
+    <dimen name="shipments_list_item_font_size_19p1">19.1dp</dimen>
+    <dimen name="shipments_list_item_font_size_17p7">17.7dp</dimen>
+    <dimen name="shipments_list_item_icon_size_7">7dp</dimen>
+    <dimen name="shipments_list_item_trailing_icon_width_119">119dp</dimen>
+    <dimen name="shipments_list_item_trailing_icon_height_91">91dp</dimen>
 </resources>

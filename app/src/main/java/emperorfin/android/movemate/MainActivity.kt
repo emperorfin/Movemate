@@ -4,11 +4,17 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,9 +24,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import emperorfin.android.movemate.ui.component.BigButton
+import emperorfin.android.movemate.ui.component.CustomChipGroup
 import emperorfin.android.movemate.ui.component.DropdownWithIcon
+import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
 import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
+import emperorfin.android.movemate.ui.component.TrackingItem
 import emperorfin.android.movemate.ui.theme.GreenFf3dbc89
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
@@ -31,11 +41,58 @@ class MainActivity : ComponentActivity() {
         setContent {
             MovemateTheme {
                 Scaffold(modifier = Modifier.fillMaxSize(), containerColor = Color.Gray) { innerPadding ->
-                    Column {
+                    Column(
+                        modifier = Modifier
+                            .verticalScroll(rememberScrollState())
+                            .padding(horizontal = 16.dp)
+                    ) {
                         Greeting(
                             name = "Android",
                             modifier = Modifier.padding(innerPadding)
                         )
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        BigButton(
+                            modifier = Modifier.fillMaxWidth(),
+                            textRes = R.string.btn_back_to_home,
+                            onClick = {}
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        CustomChipGroup(
+                            chipLabels = listOf("Documents", "Glass", "Liquid", "Foods", "Electronic", "Product", "Others")
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        Box(
+                            modifier = Modifier
+                                .background(Color.White)
+                                .fillMaxWidth()
+                                .height(80.dp)
+                        ) {
+                            RoundedOutlinedTextFieldWithIcons(
+                                labelRes = R.string.txt_enter_the_receipt_number,
+                                value = "",
+                                onValueChanged = { },
+                                leadingIconRes = R.drawable.ic_search,
+                                trailingIconRes = R.drawable.ic_scan,
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        TrackingItem(
+                            shipmentNumber = "NEJ20089934122231",
+                            senderLocation = "Atlanta,5243",
+                            receiverLocation = "Chicago,6342",
+                            time = "2 day - 3 days",
+                            status = R.string.txt_waiting_to_collect
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
 
                         TextFieldWithIcon(
 //                            value = "2972 Westheimer",
@@ -66,6 +123,8 @@ class MainActivity : ComponentActivity() {
                             statusIconRes = R.drawable.ic_sync,
                             statusIconTint = GreenFf3dbc89
                         )
+
+                        Spacer(modifier = Modifier.height(height = 40.dp))
                     }
                 }
             }

@@ -51,4 +51,36 @@
     <dimen name="shipments_list_item_icon_size_7">7dp</dimen>
     <dimen name="shipments_list_item_trailing_icon_width_119">119dp</dimen>
     <dimen name="shipments_list_item_trailing_icon_height_91">91dp</dimen>
+
+    <dimen name="tracking_item_height_400">400dp</dimen>
+    <dimen name="tracking_item_padding_horizontal_16">16dp</dimen>
+    <dimen name="tracking_item_padding_vertical_16">16dp</dimen>
+    <dimen name="tracking_item_padding_end_8">8dp</dimen>
+    <dimen name="tracking_item_padding_end_12">12dp</dimen>
+    <dimen name="tracking_item_text_font_size_13p8">13.8dp</dimen>
+    <dimen name="tracking_item_text_font_size_17p6">17.6dp</dimen>
+    <dimen name="tracking_item_text_font_size_14p5">14.5dp</dimen>
+    <dimen name="tracking_item_text_font_size_16p8">16.8dp</dimen>
+    <dimen name="tracking_item_text_font_size_15p8">15.8dp</dimen>
+    <dimen name="tracking_item_text_font_size_18p3">18.3dp</dimen>
+    <dimen name="tracking_item_spacer_height_10">10dp</dimen>
+    <dimen name="tracking_item_spacer_height_12">12dp</dimen>
+    <dimen name="tracking_item_spacer_height_20">20dp</dimen>
+    <dimen name="tracking_item_spacer_height_23">23dp</dimen>
+    <dimen name="tracking_item_spacer_height_25">25dp</dimen>
+    <dimen name="tracking_item_spacer_height_50">50dp</dimen>
+    <dimen name="tracking_item_spacer_width_5">5dp</dimen>
+    <dimen name="tracking_item_spacer_width_8">8dp</dimen>
+    <dimen name="tracking_item_spacer_width_13">13dp</dimen>
+    <dimen name="tracking_item_image_width_60">60dp</dimen>
+    <dimen name="tracking_item_image_width_54">54dp</dimen>
+    <dimen name="tracking_item_image_width_524">524dp</dimen>
+    <dimen name="tracking_item_image_height_3">3dp</dimen>
+    <dimen name="tracking_item_image_height_54">54dp</dimen>
+    <dimen name="tracking_item_image_height_64">64dp</dimen>
+    <dimen name="tracking_item_icon_size_8">8dp</dimen>
+    <dimen name="tracking_item_icon_height_3">3dp</dimen>
+    <dimen name="tracking_item_icon_height_20">20dp</dimen>
+    <dimen name="tracking_item_icon_width_20">20dp</dimen>
+    <dimen name="tracking_item_text_button_height_50">50dp</dimen>
 </resources>

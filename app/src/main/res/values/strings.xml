@@ -2,9 +2,16 @@
     <string name="app_name">Movemate</string>
 
     <string name="btn_back_to_home">Back to home</string>
+    <string name="btn_add_stop">Add Stop</string>
 
     <string name="txt_enter_the_receipt_number">Enter the receipt number...</string>
     <string name="txt_in_progress">in-progress</string>
     <string name="txt_arriving_today">Arriving today!</string>
+    <string name="txt_waiting_to_collect">Waiting to collect</string>
     <string name="txt_your_delivery_from_your_location_is_arriving_today">Your delivery, %s from %s, is arriving today!</string>
+    <string name="txt_shipment_number">Shipment Number</string>
+    <string name="txt_sender">Sender</string>
+    <string name="txt_receiver">Receiver</string>
+    <string name="txt_time">Time</string>
+    <string name="txt_status">Status</string>
 </resources>

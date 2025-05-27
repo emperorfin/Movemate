@@ -18,6 +18,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -31,6 +35,7 @@ import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcon
 import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
 import emperorfin.android.movemate.ui.component.TrackingItem
+import emperorfin.android.movemate.ui.component.VehiclesListItem
 import emperorfin.android.movemate.ui.theme.GreenFf3dbc89
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
@@ -41,6 +46,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             MovemateTheme {
                 Scaffold(modifier = Modifier.fillMaxSize(), containerColor = Color.Gray) { innerPadding ->
+
+                    var search by rememberSaveable { mutableStateOf("") }
+                    var location by rememberSaveable { mutableStateOf("") }
+
                     Column(
                         modifier = Modifier
                             .verticalScroll(rememberScrollState())
@@ -75,12 +84,22 @@ class MainActivity : ComponentActivity() {
                         ) {
                             RoundedOutlinedTextFieldWithIcons(
                                 labelRes = R.string.txt_enter_the_receipt_number,
-                                value = "",
-                                onValueChanged = { },
+                                value = search,
+                                onValueChanged = {
+                                    search = it
+                                },
                                 leadingIconRes = R.drawable.ic_search,
                                 trailingIconRes = R.drawable.ic_scan,
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(height = 20.dp))
+
+                        VehiclesListItem(
+                            vehicleType = "Cargo freight",
+                            coverage = "Reliable",
+                            image = R.drawable.img_truck
+                        )
 
                         Spacer(modifier = Modifier.height(height = 20.dp))
 
@@ -95,9 +114,10 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(height = 20.dp))
 
                         TextFieldWithIcon(
-//                            value = "2972 Westheimer",
-                            value = "",
-                            onValueChange = {},
+                            value = location,
+                            onValueChange = {
+                                location = it
+                            },
                             hint = "Sender location",
                             icon = R.drawable.ic_upload
                         )

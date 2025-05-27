@@ -83,4 +83,16 @@
     <dimen name="tracking_item_icon_height_20">20dp</dimen>
     <dimen name="tracking_item_icon_width_20">20dp</dimen>
     <dimen name="tracking_item_text_button_height_50">50dp</dimen>
+
+    <dimen name="vehicles_list_item_width_235">235dp</dimen>
+    <dimen name="vehicles_list_item_height_288">288dp</dimen>
+    <dimen name="vehicles_list_item_padding_top_26">26dp</dimen>
+    <dimen name="vehicles_list_item_padding_start_24">24dp</dimen>
+    <dimen name="vehicles_list_item_padding_bottom_4">4dp</dimen>
+    <dimen name="vehicles_list_item_text_font_size_18p4">18.4dp</dimen>
+    <dimen name="vehicles_list_item_text_font_size_23p3">23.3dp</dimen>
+    <dimen name="vehicles_list_item_space_height_6">6dp</dimen>
+    <dimen name="vehicles_list_item_space_height_7">7dp</dimen>
+    <dimen name="vehicles_list_item_image_width_210">210dp</dimen>
+    <dimen name="vehicles_list_item_image_height_210">210dp</dimen>
 </resources>

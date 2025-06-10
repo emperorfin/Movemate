@@ -22,21 +22,29 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import emperorfin.android.movemate.ui.component.BigButton
 import emperorfin.android.movemate.ui.component.CustomChipGroup
 import emperorfin.android.movemate.ui.component.DropdownWithIcon
 import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
 import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
+import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.component.TrackingItem
 import emperorfin.android.movemate.ui.component.VehiclesListItem
+import emperorfin.android.movemate.ui.theme.BlackFf70737a
+import emperorfin.android.movemate.ui.theme.GrayFfbcbcbc
 import emperorfin.android.movemate.ui.theme.GreenFf3dbc89
+import emperorfin.android.movemate.ui.theme.GreenFf8cd2b3
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 
 class MainActivity : ComponentActivity() {
@@ -142,6 +150,30 @@ class MainActivity : ComponentActivity() {
                             date = "Sep 20,2023",
                             statusIconRes = R.drawable.ic_sync,
                             statusIconTint = GreenFf3dbc89
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 40.dp))
+
+                        TextTile(
+                            title = R.string.txt_total_estimated_amount,
+                            subTitle = R.string.txt_145_usd,
+                            description = R.string.txt_this_amount_is_estimated_this_will_vary_if,
+                            titleColor = BlackFf70737a,
+                            subTitleColor = GreenFf8cd2b3,
+                            descriptionColor = GrayFfbcbcbc,
+                            titleHorizontalAlignment = Alignment.CenterHorizontally,
+                            subTitleHorizontalAlignment = Alignment.CenterHorizontally,
+                            descriptionHorizontalAlignment = Alignment.CenterHorizontally,
+                            descriptionTextAlignment = TextAlign.Center,
+                            descriptionHorizontalPadding = 45.dp,
+                            titleFontSize = 27.5.sp,
+                            subTitleFontSize = 26.8.sp,
+                            descriptionFontSize = 12.8.sp,
+                            titleFontWeight = FontWeight.SemiBold,
+                            subTitleFontWeight = FontWeight.SemiBold,
+                            descriptionFontWeight = FontWeight.Medium,
+                            spaceBelowTitle = 12.dp,
+                            spaceBelowSubTitle = 7.dp
                         )
 
                         Spacer(modifier = Modifier.height(height = 40.dp))

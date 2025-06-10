@@ -14,4 +14,7 @@
     <string name="txt_receiver">Receiver</string>
     <string name="txt_time">Time</string>
     <string name="txt_status">Status</string>
+    <string name="txt_total_estimated_amount">Total Estimated Amount</string>
+    <string name="txt_145_usd">$1458USD</string>
+    <string name="txt_this_amount_is_estimated_this_will_vary_if">This amount is estimated this will vary if you change your location or weight</string>
 </resources>

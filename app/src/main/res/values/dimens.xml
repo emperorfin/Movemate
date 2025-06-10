@@ -95,4 +95,11 @@
     <dimen name="vehicles_list_item_space_height_7">7dp</dimen>
     <dimen name="vehicles_list_item_image_width_210">210dp</dimen>
     <dimen name="vehicles_list_item_image_height_210">210dp</dimen>
+
+    <dimen name="text_title_padding_all_8">8dp</dimen>
+    <dimen name="text_title_padding_horizontal_8">8dp</dimen>
+    <dimen name="text_title_font_size_12p8">12.8dp</dimen>
+    <dimen name="text_title_font_size_26p8">26.8dp</dimen>
+    <dimen name="text_title_font_size_27p5">27.5dp</dimen>
+    <dimen name="text_title_space_height_0">0dp</dimen>
 </resources>

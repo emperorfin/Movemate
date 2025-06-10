@@ -102,4 +102,11 @@
     <dimen name="text_title_font_size_26p8">26.8dp</dimen>
     <dimen name="text_title_font_size_27p5">27.5dp</dimen>
     <dimen name="text_title_space_height_0">0dp</dimen>
+
+    <dimen name="heading_with_icon_padding_start_27">27dp</dimen>
+    <dimen name="heading_with_icon_padding_end_12">12dp</dimen>
+    <dimen name="heading_with_icon_font_size_37p3">37.3dp</dimen>
+    <dimen name="heading_with_icon_spacer_width_8">8dp</dimen>
+    <dimen name="heading_with_icon_image_height_29">29dp</dimen>
+    <dimen name="heading_with_icon_image_width_58">58dp</dimen>
 </resources>

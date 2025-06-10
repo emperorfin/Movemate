@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.sp
 import emperorfin.android.movemate.ui.component.BigButton
 import emperorfin.android.movemate.ui.component.CustomChipGroup
 import emperorfin.android.movemate.ui.component.DropdownWithIcon
+import emperorfin.android.movemate.ui.component.HeadingWithIcon
 import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
 import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
@@ -174,6 +175,13 @@ class MainActivity : ComponentActivity() {
                             descriptionFontWeight = FontWeight.Medium,
                             spaceBelowTitle = 12.dp,
                             spaceBelowSubTitle = 7.dp
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 40.dp))
+
+                        HeadingWithIcon(
+                            label = R.string.txt_movemate,
+                            trailingIcon = R.drawable.ic_speedy_lorry
                         )
 
                         Spacer(modifier = Modifier.height(height = 40.dp))

@@ -37,6 +37,7 @@ import emperorfin.android.movemate.ui.component.CustomChipGroup
 import emperorfin.android.movemate.ui.component.DropdownWithIcon
 import emperorfin.android.movemate.ui.component.HeadingWithIcon
 import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
+import emperorfin.android.movemate.ui.component.SearchListItem
 import emperorfin.android.movemate.ui.component.ShipmentsListItem
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
 import emperorfin.android.movemate.ui.component.TextTile
@@ -182,6 +183,15 @@ class MainActivity : ComponentActivity() {
                         HeadingWithIcon(
                             label = R.string.txt_movemate,
                             trailingIcon = R.drawable.ic_speedy_lorry
+                        )
+
+                        Spacer(modifier = Modifier.height(height = 40.dp))
+
+                        SearchListItem(
+                            title = "Macbook pro M2",
+                            trackingNumber = "#NE43857340857904",
+                            senderLocation = "Paris",
+                            destination = "Morocco"
                         )
 
                         Spacer(modifier = Modifier.height(height = 40.dp))

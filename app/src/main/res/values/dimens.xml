@@ -109,4 +109,19 @@
     <dimen name="heading_with_icon_spacer_width_8">8dp</dimen>
     <dimen name="heading_with_icon_image_height_29">29dp</dimen>
     <dimen name="heading_with_icon_image_width_58">58dp</dimen>
+
+    <dimen name="search_list_item_height_135">135dp</dimen>
+    <dimen name="search_list_item_image_height_64">64dp</dimen>
+    <dimen name="search_list_item_image_width_64">64dp</dimen>
+    <dimen name="search_list_item_padding_all_8">8dp</dimen>
+    <dimen name="search_list_item_spacer_width_1">1dp</dimen>
+    <dimen name="search_list_item_spacer_width_4">4dp</dimen>
+    <dimen name="search_list_item_spacer_height_11">11dp</dimen>
+    <dimen name="search_list_item_text_font_size_24p2">24.2dp</dimen>
+    <dimen name="search_list_item_text_font_size_15p8">15.8dp</dimen>
+    <dimen name="search_list_item_icon_size_3">3dp</dimen>
+    <dimen name="search_list_item_icon_size_6">6dp</dimen>
+    <dimen name="search_list_item_icon_size_17">17dp</dimen>
+    <dimen name="search_list_item_icon_size_18">18dp</dimen>
+    <dimen name="search_list_item_icon_size_524">524dp</dimen>
 </resources>

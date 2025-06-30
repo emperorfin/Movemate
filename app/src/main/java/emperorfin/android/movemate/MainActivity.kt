@@ -43,6 +43,7 @@ import emperorfin.android.movemate.ui.component.TextFieldWithIcon
 import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.component.TrackingItem
 import emperorfin.android.movemate.ui.component.VehiclesListItem
+import emperorfin.android.movemate.ui.screen.ordersummary.OrderSummaryScreen
 import emperorfin.android.movemate.ui.theme.BlackFf70737a
 import emperorfin.android.movemate.ui.theme.GrayFfbcbcbc
 import emperorfin.android.movemate.ui.theme.GreenFf3dbc89
@@ -197,6 +198,8 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(height = 40.dp))
                     }
                 }
+
+//                OrderSummaryScreen()
             }
         }
     }

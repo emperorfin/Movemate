@@ -7,4 +7,6 @@
     <integer name="tracking_item_text_max_lines_1">1</integer>
 
     <integer name="search_list_item_text_max_lines_1">1</integer>
+
+    <integer name="app_bar_text_max_lines_1">1</integer>
 </resources>

@@ -124,4 +124,23 @@
     <dimen name="search_list_item_icon_size_17">17dp</dimen>
     <dimen name="search_list_item_icon_size_18">18dp</dimen>
     <dimen name="search_list_item_icon_size_524">524dp</dimen>
+
+    <dimen name="app_bar_top_app_bar_height_70">70dp</dimen>
+    <dimen name="app_bar_text_padding_all_8">8dp</dimen>
+    <dimen name="app_bar_text_font_size_18">18dp</dimen>
+
+    <dimen name="order_summary_screen_padding_horizontal_16">16dp</dimen>
+    <dimen name="order_summary_screen_padding_start_60">60dp</dimen>
+    <dimen name="order_summary_screen_text_tile_description_horizontal_padding_45">45dp</dimen>
+    <dimen name="order_summary_screen_text_tile_title_font_size_27p5">27.5dp</dimen>
+    <dimen name="order_summary_screen_text_tile_sub_title_font_size_26p8">26.8dp</dimen>
+    <dimen name="order_summary_screen_text_tile_description_font_size_12p8">12.8dp</dimen>
+    <dimen name="order_summary_screen_text_tile_space_below_title_12">12dp</dimen>
+    <dimen name="order_summary_screen_text_tile_space_below_subtitle_7">7dp</dimen>
+    <dimen name="order_summary_screen_spacer_height_40">40dp</dimen>
+    <dimen name="order_summary_screen_spacer_height_50">50dp</dimen>
+    <dimen name="order_summary_screen_spacer_height_80">80dp</dimen>
+    <dimen name="order_summary_screen_spacer_height_101">101dp</dimen>
+    <dimen name="order_summary_screen_image_width_283">283dp</dimen>
+    <dimen name="order_summary_screen_image_height_190">190dp</dimen>
 </resources>

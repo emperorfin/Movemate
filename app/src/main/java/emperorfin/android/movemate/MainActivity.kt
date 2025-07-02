@@ -43,6 +43,7 @@ import emperorfin.android.movemate.ui.component.TextFieldWithIcon
 import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.component.TrackingItem
 import emperorfin.android.movemate.ui.component.VehiclesListItem
+import emperorfin.android.movemate.ui.screen.calculate.CalculateScreen
 import emperorfin.android.movemate.ui.screen.ordersummary.OrderSummaryScreen
 import emperorfin.android.movemate.ui.theme.BlackFf70737a
 import emperorfin.android.movemate.ui.theme.GrayFfbcbcbc
@@ -56,150 +57,151 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MovemateTheme {
-                Scaffold(modifier = Modifier.fillMaxSize(), containerColor = Color.Gray) { innerPadding ->
-
-                    var search by rememberSaveable { mutableStateOf("") }
-                    var location by rememberSaveable { mutableStateOf("") }
-
-                    Column(
-                        modifier = Modifier
-                            .verticalScroll(rememberScrollState())
-                            .padding(horizontal = 16.dp)
-                    ) {
-                        Greeting(
-                            name = "Android",
-                            modifier = Modifier.padding(innerPadding)
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        BigButton(
-                            modifier = Modifier.fillMaxWidth(),
-                            textRes = R.string.btn_back_to_home,
-                            onClick = {}
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        CustomChipGroup(
-                            chipLabels = listOf("Documents", "Glass", "Liquid", "Foods", "Electronic", "Product", "Others")
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        Box(
-                            modifier = Modifier
-                                .background(Color.White)
-                                .fillMaxWidth()
-                                .height(80.dp)
-                        ) {
-                            RoundedOutlinedTextFieldWithIcons(
-                                labelRes = R.string.txt_enter_the_receipt_number,
-                                value = search,
-                                onValueChanged = {
-                                    search = it
-                                },
-                                leadingIconRes = R.drawable.ic_search,
-                                trailingIconRes = R.drawable.ic_scan,
-                            )
-                        }
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        VehiclesListItem(
-                            vehicleType = "Cargo freight",
-                            coverage = "Reliable",
-                            image = R.drawable.img_truck
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        TrackingItem(
-                            shipmentNumber = "NEJ20089934122231",
-                            senderLocation = "Atlanta,5243",
-                            receiverLocation = "Chicago,6342",
-                            time = "2 day - 3 days",
-                            status = R.string.txt_waiting_to_collect
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        TextFieldWithIcon(
-                            value = location,
-                            onValueChange = {
-                                location = it
-                            },
-                            hint = "Sender location",
-                            icon = R.drawable.ic_upload
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        DropdownWithIcon(
-                            icon = R.drawable.ic_box,
-                            menuItems = listOf("Box", "Box2", "Box3"),
-                            onItemClick = {}
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 20.dp))
-
-                        ShipmentsListItem(
-                            trailingImageRes = R.drawable.img_box_119_by_91,
-                            title = stringResource(id = R.string.txt_arriving_today),
-                            status = R.string.txt_in_progress,
-                            trackingNumber = "#NEJ20089934122231",
-                            location = "Atlanta",
-                            amount = "1400",
-                            date = "Sep 20,2023",
-                            statusIconRes = R.drawable.ic_sync,
-                            statusIconTint = GreenFf3dbc89
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 40.dp))
-
-                        TextTile(
-                            title = R.string.txt_total_estimated_amount,
-                            subTitle = R.string.txt_145_usd,
-                            description = R.string.txt_this_amount_is_estimated_this_will_vary_if,
-                            titleColor = BlackFf70737a,
-                            subTitleColor = GreenFf8cd2b3,
-                            descriptionColor = GrayFfbcbcbc,
-                            titleHorizontalAlignment = Alignment.CenterHorizontally,
-                            subTitleHorizontalAlignment = Alignment.CenterHorizontally,
-                            descriptionHorizontalAlignment = Alignment.CenterHorizontally,
-                            descriptionTextAlignment = TextAlign.Center,
-                            descriptionHorizontalPadding = 45.dp,
-                            titleFontSize = 27.5.sp,
-                            subTitleFontSize = 26.8.sp,
-                            descriptionFontSize = 12.8.sp,
-                            titleFontWeight = FontWeight.SemiBold,
-                            subTitleFontWeight = FontWeight.SemiBold,
-                            descriptionFontWeight = FontWeight.Medium,
-                            spaceBelowTitle = 12.dp,
-                            spaceBelowSubTitle = 7.dp
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 40.dp))
-
-                        HeadingWithIcon(
-                            label = R.string.txt_movemate,
-                            trailingIcon = R.drawable.ic_speedy_lorry
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 40.dp))
-
-                        SearchListItem(
-                            title = "Macbook pro M2",
-                            trackingNumber = "#NE43857340857904",
-                            senderLocation = "Paris",
-                            destination = "Morocco"
-                        )
-
-                        Spacer(modifier = Modifier.height(height = 40.dp))
-                    }
-                }
+//                Scaffold(modifier = Modifier.fillMaxSize(), containerColor = Color.Gray) { innerPadding ->
+//
+//                    var search by rememberSaveable { mutableStateOf("") }
+//                    var location by rememberSaveable { mutableStateOf("") }
+//
+//                    Column(
+//                        modifier = Modifier
+//                            .verticalScroll(rememberScrollState())
+//                            .padding(horizontal = 16.dp)
+//                    ) {
+//                        Greeting(
+//                            name = "Android",
+//                            modifier = Modifier.padding(innerPadding)
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        BigButton(
+//                            modifier = Modifier.fillMaxWidth(),
+//                            textRes = R.string.btn_back_to_home,
+//                            onClick = {}
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        CustomChipGroup(
+//                            chipLabels = listOf("Documents", "Glass", "Liquid", "Foods", "Electronic", "Product", "Others")
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        Box(
+//                            modifier = Modifier
+//                                .background(Color.White)
+//                                .fillMaxWidth()
+//                                .height(80.dp)
+//                        ) {
+//                            RoundedOutlinedTextFieldWithIcons(
+//                                labelRes = R.string.txt_enter_the_receipt_number,
+//                                value = search,
+//                                onValueChanged = {
+//                                    search = it
+//                                },
+//                                leadingIconRes = R.drawable.ic_search,
+//                                trailingIconRes = R.drawable.ic_scan,
+//                            )
+//                        }
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        VehiclesListItem(
+//                            vehicleType = "Cargo freight",
+//                            coverage = "Reliable",
+//                            image = R.drawable.img_truck
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        TrackingItem(
+//                            shipmentNumber = "NEJ20089934122231",
+//                            senderLocation = "Atlanta,5243",
+//                            receiverLocation = "Chicago,6342",
+//                            time = "2 day - 3 days",
+//                            status = R.string.txt_waiting_to_collect
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        TextFieldWithIcon(
+//                            value = location,
+//                            onValueChange = {
+//                                location = it
+//                            },
+//                            hint = "Sender location",
+//                            icon = R.drawable.ic_upload
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        DropdownWithIcon(
+//                            icon = R.drawable.ic_box,
+//                            menuItems = listOf("Box", "Box2", "Box3"),
+//                            onItemClick = {}
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 20.dp))
+//
+//                        ShipmentsListItem(
+//                            trailingImageRes = R.drawable.img_box_119_by_91,
+//                            title = stringResource(id = R.string.txt_arriving_today),
+//                            status = R.string.txt_in_progress,
+//                            trackingNumber = "#NEJ20089934122231",
+//                            location = "Atlanta",
+//                            amount = "1400",
+//                            date = "Sep 20,2023",
+//                            statusIconRes = R.drawable.ic_sync,
+//                            statusIconTint = GreenFf3dbc89
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 40.dp))
+//
+//                        TextTile(
+//                            title = R.string.txt_total_estimated_amount,
+//                            subTitle = R.string.txt_145_usd,
+//                            description = R.string.txt_this_amount_is_estimated_this_will_vary_if,
+//                            titleColor = BlackFf70737a,
+//                            subTitleColor = GreenFf8cd2b3,
+//                            descriptionColor = GrayFfbcbcbc,
+//                            titleHorizontalAlignment = Alignment.CenterHorizontally,
+//                            subTitleHorizontalAlignment = Alignment.CenterHorizontally,
+//                            descriptionHorizontalAlignment = Alignment.CenterHorizontally,
+//                            descriptionTextAlignment = TextAlign.Center,
+//                            descriptionHorizontalPadding = 45.dp,
+//                            titleFontSize = 27.5.sp,
+//                            subTitleFontSize = 26.8.sp,
+//                            descriptionFontSize = 12.8.sp,
+//                            titleFontWeight = FontWeight.SemiBold,
+//                            subTitleFontWeight = FontWeight.SemiBold,
+//                            descriptionFontWeight = FontWeight.Medium,
+//                            spaceBelowTitle = 12.dp,
+//                            spaceBelowSubTitle = 7.dp
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 40.dp))
+//
+//                        HeadingWithIcon(
+//                            label = R.string.txt_movemate,
+//                            trailingIcon = R.drawable.ic_speedy_lorry
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 40.dp))
+//
+//                        SearchListItem(
+//                            title = "Macbook pro M2",
+//                            trackingNumber = "#NE43857340857904",
+//                            senderLocation = "Paris",
+//                            destination = "Morocco"
+//                        )
+//
+//                        Spacer(modifier = Modifier.height(height = 40.dp))
+//                    }
+//                }
 
 //                OrderSummaryScreen()
+                CalculateScreen()
             }
         }
     }

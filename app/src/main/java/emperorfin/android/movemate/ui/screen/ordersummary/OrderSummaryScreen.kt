@@ -18,6 +18,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import emperorfin.android.movemate.R
@@ -27,6 +28,7 @@ import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.theme.BlackFf70737a
 import emperorfin.android.movemate.ui.theme.GrayFfbcbcbc
 import emperorfin.android.movemate.ui.theme.GreenFf8cd2b3
+import emperorfin.android.movemate.ui.theme.MovemateTheme
 
 
 @Composable
@@ -93,5 +95,18 @@ fun OrderSummaryScreen(
                 onClick = {}
             )
         }
+    }
+}
+
+@Preview(
+    showBackground = true,
+    showSystemUi = true,
+    device = "spec:width=411dp,height=891dp",
+    backgroundColor = 0xFFFFFFFF
+)
+@Composable
+private fun OrderSummaryScreenPreview() {
+    MovemateTheme {
+        OrderSummaryScreen()
     }
 }

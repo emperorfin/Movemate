@@ -3,6 +3,7 @@
 
     <string name="btn_back_to_home">Back to home</string>
     <string name="btn_add_stop">Add Stop</string>
+    <string name="btn_calculate">Calculate</string>
 
     <string name="txt_enter_the_receipt_number">Enter the receipt number...</string>
     <string name="txt_in_progress">in-progress</string>
@@ -18,4 +19,14 @@
     <string name="txt_145_usd">$1458USD</string>
     <string name="txt_this_amount_is_estimated_this_will_vary_if">This amount is estimated this will vary if you change your location or weight</string>
     <string name="txt_movemate">MoveMate</string>
+
+    <string name="label_destination">Destination</string>
+    <string name="label_packaging">Packaging</string>
+    <string name="label_categories">Categories</string>
+    <string name="label_what_are_you_sending">What are you sending?</string>
+    <string name="label_sender_location">Sender location</string>
+    <string name="label_receiver_location">Receiver location</string>
+    <string name="label_approx_weight">Approx weight</string>
+
+    <string name="screen_title_calculate">Calculate</string>
 </resources>

@@ -127,7 +127,10 @@
 
     <dimen name="app_bar_top_app_bar_height_70">70dp</dimen>
     <dimen name="app_bar_text_padding_all_8">8dp</dimen>
+    <dimen name="app_bar_text_padding_end_56">56dp</dimen>
     <dimen name="app_bar_text_font_size_18">18dp</dimen>
+    <dimen name="app_bar_image_width_18">18dp</dimen>
+    <dimen name="app_bar_image_height_19">19dp</dimen>
 
     <dimen name="order_summary_screen_padding_horizontal_16">16dp</dimen>
     <dimen name="order_summary_screen_padding_start_60">60dp</dimen>
@@ -143,4 +146,20 @@
     <dimen name="order_summary_screen_spacer_height_101">101dp</dimen>
     <dimen name="order_summary_screen_image_width_283">283dp</dimen>
     <dimen name="order_summary_screen_image_height_190">190dp</dimen>
+
+    <dimen name="calculate_screen_padding_horizontal_8">8dp</dimen>
+    <dimen name="calculate_screen_box_padding_horizontal_4">4dp</dimen>
+    <dimen name="calculate_screen_box_padding_horizontal_8">8dp</dimen>
+    <dimen name="calculate_screen_box_padding_vertical_8">8dp</dimen>
+    <dimen name="calculate_screen_box_height_284">284dp</dimen>
+    <dimen name="calculate_screen_spacer_height_8">8dp</dimen>
+    <dimen name="calculate_screen_spacer_height_10">10dp</dimen>
+    <dimen name="calculate_screen_spacer_height_16">16dp</dimen>
+    <dimen name="calculate_screen_spacer_height_26">26dp</dimen>
+    <dimen name="calculate_screen_spacer_height_48">48dp</dimen>
+    <dimen name="calculate_screen_spacer_height_58">58dp</dimen>
+    <dimen name="calculate_screen_text_tile_title_font_size_23">23dp</dimen>
+    <dimen name="calculate_screen_text_tile_subtitle_font_size_22">22dp</dimen>
+    <dimen name="calculate_screen_text_tile_space_below_title_8">8dp</dimen>
+    <dimen name="calculate_screen_box_rounded_corner_shape_size_15">15dp</dimen>
 </resources>

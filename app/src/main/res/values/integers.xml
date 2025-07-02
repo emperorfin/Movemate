@@ -9,4 +9,8 @@
     <integer name="search_list_item_text_max_lines_1">1</integer>
 
     <integer name="app_bar_text_max_lines_1">1</integer>
+
+    <integer name="home_screen_text_max_lines_1">1</integer>
+
+    <integer name="main_activity_text_max_lines_1">1</integer>
 </resources>

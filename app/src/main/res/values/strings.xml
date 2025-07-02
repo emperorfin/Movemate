@@ -19,6 +19,8 @@
     <string name="txt_145_usd">$1458USD</string>
     <string name="txt_this_amount_is_estimated_this_will_vary_if">This amount is estimated this will vary if you change your location or weight</string>
     <string name="txt_movemate">MoveMate</string>
+    <string name="txt_your_location">Your location</string>
+    <string name="txt_wertheimer_illinois">Wertheimer, Illinois</string>
 
     <string name="label_destination">Destination</string>
     <string name="label_packaging">Packaging</string>
@@ -27,6 +29,10 @@
     <string name="label_sender_location">Sender location</string>
     <string name="label_receiver_location">Receiver location</string>
     <string name="label_approx_weight">Approx weight</string>
+    <string name="label_tracking">Tracking</string>
+    <string name="label_available_vehicles">Available vehicles</string>
 
     <string name="screen_title_calculate">Calculate</string>
+
+    <string name="message_no_profile_screen_yet">No Profile screen yet.</string>
 </resources>

@@ -162,4 +162,31 @@
     <dimen name="calculate_screen_text_tile_subtitle_font_size_22">22dp</dimen>
     <dimen name="calculate_screen_text_tile_space_below_title_8">8dp</dimen>
     <dimen name="calculate_screen_box_rounded_corner_shape_size_15">15dp</dimen>
+
+    <dimen name="home_screen_box_height_165">165dp</dimen>
+    <dimen name="home_screen_box_padding_horizontal_16">16dp</dimen>
+    <dimen name="home_screen_box_padding_start_8">8dp</dimen>
+    <dimen name="home_screen_column_padding_horizontal_16">16dp</dimen>
+    <dimen name="home_screen_lazy_row_padding_all_8">8dp</dimen>
+    <dimen name="home_screen_lazy_row_horizontal_arrangement_space_12">12dp</dimen>
+    <dimen name="home_screen_image_size_47">47dp</dimen>
+    <dimen name="home_screen_image_size_51">51dp</dimen>
+    <dimen name="home_screen_image_height_10">10dp</dimen>
+    <dimen name="home_screen_image_height_13">13dp</dimen>
+    <dimen name="home_screen_image_width_9">9dp</dimen>
+    <dimen name="home_screen_image_width_12">12dp</dimen>
+    <dimen name="home_screen_spacer_width_4">4dp</dimen>
+    <dimen name="home_screen_spacer_height_8">8dp</dimen>
+    <dimen name="home_screen_spacer_height_10">10dp</dimen>
+    <dimen name="home_screen_text_font_size_12">12dp</dimen>
+    <dimen name="home_screen_text_font_size_15">15dp</dimen>
+    <dimen name="home_screen_text_tile_title_font_size_23">23dp</dimen>
+
+    <dimen name="main_activity_navigation_bar_item_box_width_150">150dp</dimen>
+    <dimen name="main_activity_navigation_bar_item_box_height_5">5dp</dimen>
+    <dimen name="main_activity_rounded_corner_shape_size_1p5">1.5dp</dimen>
+    <dimen name="main_activity_spacer_height_20">20dp</dimen>
+    <dimen name="main_activity_icon_width_19">19dp</dimen>
+    <dimen name="main_activity_icon_height_22">22dp</dimen>
+    <dimen name="main_activity_text_font_size_14p6">14.6dp</dimen>
 </resources>

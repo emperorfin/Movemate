@@ -29,6 +29,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import emperorfin.android.movemate.R
+import emperorfin.android.movemate.ui.theme.BlueFf4b3393
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 import emperorfin.android.movemate.ui.theme.Purple40
 
@@ -80,7 +81,7 @@ fun AppBar(
             }
         },
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = Purple40
+            containerColor = BlueFf4b3393
         ),
         actions = {
             actions()

@@ -1,6 +1,7 @@
 package emperorfin.android.movemate.ui.screen.calculate
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -13,6 +14,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -25,6 +27,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import emperorfin.android.movemate.R
 import emperorfin.android.movemate.ui.component.AppBar
 import emperorfin.android.movemate.ui.component.BigButton
@@ -33,6 +38,7 @@ import emperorfin.android.movemate.ui.component.DropdownWithIcon
 import emperorfin.android.movemate.ui.component.TextFieldWithIcon
 import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.theme.BlackFf70737a
+import emperorfin.android.movemate.ui.theme.BlueFf4b3393
 import emperorfin.android.movemate.ui.theme.GrayFfb4b3b5
 import emperorfin.android.movemate.ui.theme.MovemateTheme
 import emperorfin.android.movemate.ui.theme.WhiteFff9f9f9
@@ -41,14 +47,26 @@ import emperorfin.android.movemate.ui.theme.WhiteFffefefe
 
 @Composable
 fun CalculateScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController: NavHostController
 ) {
+
+    val systemUiController = rememberSystemUiController()
+    val useDarkIcons = !isSystemInDarkTheme()
+
+    SideEffect {
+        systemUiController.setStatusBarColor(
+            color = BlueFf4b3393,
+            darkIcons = useDarkIcons
+        )
+    }
+    
     Scaffold(
         modifier = modifier.fillMaxSize(),
         topBar = {
             AppBar(
                 title = R.string.screen_title_calculate,
-                onBackPress = {}
+                onBackPress = { navController.navigateUp() }
             )
         },
         containerColor = WhiteFff9f9f9
@@ -171,7 +189,9 @@ fun CalculateScreen(
 
             Spacer(modifier = Modifier.height(height = dimensionResource(id = R.dimen.calculate_screen_spacer_height_58)))
 
-            Box {
+            Box(
+                modifier = Modifier.padding(horizontal = dimensionResource(id = R.dimen.calculate_screen_box_padding_horizontal_8))
+            ) {
                 BigButton(
                     modifier = Modifier.fillMaxWidth(),
                     textRes = R.string.btn_calculate,
@@ -193,6 +213,8 @@ fun CalculateScreen(
 @Composable
 private fun CalculateScreenPreview() {
     MovemateTheme {
-        CalculateScreen()
+        CalculateScreen(
+            navController = rememberNavController()
+        )
     }
 }

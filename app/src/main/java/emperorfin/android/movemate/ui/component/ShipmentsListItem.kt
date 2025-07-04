@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
@@ -57,7 +58,8 @@ fun ShipmentsListItem(
     currencyIso: String = "USD",
     amount: String,
     date: String,
-    statusIconTint: Color
+    statusColor: Color,
+    statusIconTint: Color,
 ) {
     Box(
         modifier = modifier
@@ -81,14 +83,17 @@ fun ShipmentsListItem(
                 Box(
                     modifier = modifier
                         .background(color = GrayFff3f4f4, RoundedCornerShape(size = dimensionResource(id = R.dimen.shipments_list_item_box_row_column_box_rounded_corner_shape_size_20)))
-                        .width(width = dimensionResource(id = R.dimen.shipments_list_item_status_box_width_179))
-                        .height(height = dimensionResource(id = R.dimen.shipments_list_item_status_box_height_42)),
+//                        .width(width = dimensionResource(id = R.dimen.shipments_list_item_status_box_width_179))
+                        .height(height = dimensionResource(id = R.dimen.shipments_list_item_status_box_height_42))
+                        .wrapContentWidth(unbounded = true)
+                        .padding(all = dimensionResource(id = R.dimen.shipments_list_item_status_box_row_padding_all_8)),
                     contentAlignment = Alignment.Center
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth().padding(horizontal = dimensionResource(id = R.dimen.shipments_list_item_status_box_row_padding_horizontal_8)),
                         verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceEvenly
+//                        horizontalArrangement = Arrangement.SpaceEvenly
+                        horizontalArrangement = Arrangement.Center
                     ) {
                         Icon(
                             modifier = Modifier
@@ -99,9 +104,11 @@ fun ShipmentsListItem(
                             tint = statusIconTint
                         )
 
+                        Spacer(modifier = Modifier.width(width = dimensionResource(id = R.dimen.shipments_list_item_spacer_width_8)))
+
                         Text(
                             text = stringResource(id = status),
-                            color = GreenFf3dbc89,
+                            color = statusColor ,
                             fontSize = dimensionResource(id = R.dimen.shipments_list_item_status_text_font_size_20p3).value.sp,
                             fontWeight = FontWeight.Medium,
                             overflow = TextOverflow.Ellipsis,
@@ -213,6 +220,7 @@ private fun ShipmentsListItemPreview() {
                     amount = "1400",
                     date = "Sep 20,2023",
                     statusIconRes = R.drawable.ic_sync,
+                    statusColor = GreenFf3dbc89,
                     statusIconTint = GreenFf3dbc89,
                 )
             }

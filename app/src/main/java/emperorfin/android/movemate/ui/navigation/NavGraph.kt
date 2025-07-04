@@ -8,8 +8,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import emperorfin.android.movemate.ui.screen.home.HomeScreen
 import emperorfin.android.movemate.ui.screen.calculate.CalculateScreen
-import emperorfin.android.movemate.ui.screen.ordersummary.OrderSummaryScreen
 import emperorfin.android.movemate.ui.screen.profile.ProfileScreen
+import emperorfin.android.movemate.ui.screen.shipmenthistory.ShipmentHistoryScreen
 
 
 @Composable
@@ -25,7 +25,7 @@ fun NavGraph(
     ) {
         composable(Screen.Home.route) { HomeScreen() }
         composable(Screen.Calculate.route) { CalculateScreen(navController = navController) }
-        composable(Screen.Shipment.route) { OrderSummaryScreen() }
+        composable(Screen.Shipment.route) { ShipmentHistoryScreen(navController = navController) }
         composable(Screen.Profile.route) { ProfileScreen() }
     }
 }

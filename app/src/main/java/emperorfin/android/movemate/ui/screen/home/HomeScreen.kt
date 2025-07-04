@@ -36,11 +36,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import emperorfin.android.movemate.R
-import emperorfin.android.movemate.domain.model.VehicleModel
+import emperorfin.android.movemate.data.datasource.FakeDataSource
 import emperorfin.android.movemate.ui.component.RoundedOutlinedTextFieldWithIcons
 import emperorfin.android.movemate.ui.component.TextTile
 import emperorfin.android.movemate.ui.component.TrackingItem
@@ -74,38 +73,7 @@ fun HomeScreen(
 
         var search by rememberSaveable { mutableStateOf("") }
 
-        val vehicles = listOf(
-            VehicleModel(
-                name = "Ocean freight",
-                reliability = "International",
-                imageRes = R.drawable.img_boat
-            ),
-            VehicleModel(
-                name = "Cargo freight",
-                reliability = "Reliable",
-                imageRes = R.drawable.img_truck
-            ),
-            VehicleModel(
-                name = "Air freight",
-                reliability = "International",
-                imageRes = R.drawable.img_truck
-            ),
-            VehicleModel(
-                name = "Ocean freight",
-                reliability = "International",
-                imageRes = R.drawable.img_boat
-            ),
-            VehicleModel(
-                name = "Cargo freight",
-                reliability = "Reliable",
-                imageRes = R.drawable.img_truck
-            ),
-            VehicleModel(
-                name = "Air freight",
-                reliability = "International",
-                imageRes = R.drawable.img_truck
-            ),
-        )
+        val vehicles = FakeDataSource.getVehicles()
 
         Column(
             modifier = Modifier//.padding(paddingValues)

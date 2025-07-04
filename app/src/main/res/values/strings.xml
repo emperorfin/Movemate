@@ -7,6 +7,7 @@
 
     <string name="txt_enter_the_receipt_number">Enter the receipt number...</string>
     <string name="txt_in_progress">in-progress</string>
+    <string name="txt_pending">pending</string>
     <string name="txt_arriving_today">Arriving today!</string>
     <string name="txt_waiting_to_collect">Waiting to collect</string>
     <string name="txt_your_delivery_from_your_location_is_arriving_today">Your delivery, %s from %s, is arriving today!</string>
@@ -31,8 +32,10 @@
     <string name="label_approx_weight">Approx weight</string>
     <string name="label_tracking">Tracking</string>
     <string name="label_available_vehicles">Available vehicles</string>
+    <string name="label_shipments">Shipments</string>
 
     <string name="screen_title_calculate">Calculate</string>
+    <string name="screen_title_shipment_history">Shipment history</string>
 
     <string name="message_no_profile_screen_yet">No Profile screen yet.</string>
 </resources>

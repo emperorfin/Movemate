@@ -36,6 +36,7 @@
     <dimen name="shipments_list_item_status_box_width_179">179dp</dimen>
     <dimen name="shipments_list_item_status_box_height_42">42dp</dimen>
     <dimen name="shipments_list_item_status_box_row_padding_horizontal_8">8dp</dimen>
+    <dimen name="shipments_list_item_status_box_row_padding_all_8">8dp</dimen>
     <dimen name="shipments_list_item_status_icon_width_23">23dp</dimen>
     <dimen name="shipments_list_item_status_icon_height_18">18dp</dimen>
     <dimen name="shipments_list_item_status_text_font_size_20p3">20.3dp</dimen>
@@ -132,6 +133,10 @@
     <dimen name="app_bar_image_width_18">18dp</dimen>
     <dimen name="app_bar_image_height_19">19dp</dimen>
 
+    <dimen name="notification_indicator_box_width_37">37dp</dimen>
+    <dimen name="notification_indicator_box_height_29">29dp</dimen>
+    <dimen name="notification_indicator_box_rounded_corner_shape_size_20">20dp</dimen>
+
     <dimen name="order_summary_screen_padding_horizontal_16">16dp</dimen>
     <dimen name="order_summary_screen_padding_start_60">60dp</dimen>
     <dimen name="order_summary_screen_text_tile_description_horizontal_padding_45">45dp</dimen>
@@ -182,6 +187,9 @@
     <dimen name="home_screen_text_font_size_15">15dp</dimen>
     <dimen name="home_screen_text_tile_title_font_size_23">23dp</dimen>
 
+    <dimen name="shipment_history_screen_scrollable_tab_row_edge_padding_16">16dp</dimen>
+    <dimen name="shipment_history_screen_spacer_width_8">8dp</dimen>
+
     <dimen name="main_activity_navigation_bar_item_box_width_150">150dp</dimen>
     <dimen name="main_activity_navigation_bar_item_box_height_5">5dp</dimen>
     <dimen name="main_activity_rounded_corner_shape_size_1p5">1.5dp</dimen>
@@ -189,4 +197,16 @@
     <dimen name="main_activity_icon_width_19">19dp</dimen>
     <dimen name="main_activity_icon_height_22">22dp</dimen>
     <dimen name="main_activity_text_font_size_14p6">14.6dp</dimen>
+
+    <dimen name="all_tab_content_lazy_column_padding_horizontal_16">16dp</dimen>
+    <dimen name="all_tab_content_space_height_8">8dp</dimen>
+    <dimen name="all_tab_content_text_tile_title_font_size_23">23dp</dimen>
+
+    <dimen name="in_progress_tab_content_lazy_column_padding_horizontal_16">16dp</dimen>
+    <dimen name="in_progress_tab_content_space_height_8">8dp</dimen>
+    <dimen name="in_progress_tab_content_text_tile_title_font_size_23">23dp</dimen>
+
+    <dimen name="pending_orders_tab_content_lazy_column_padding_horizontal_16">16dp</dimen>
+    <dimen name="pending_orders_tab_content_space_height_8">8dp</dimen>
+    <dimen name="pending_orders_tab_content_text_tile_title_font_size_23">23dp</dimen>
 </resources>
